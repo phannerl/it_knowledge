@@ -1,6 +1,10 @@
 Object Relational Mapping (ORM) - A technique used in creating a "bridge" between object-oriented programs and, in most cases, relational databases.
                                 - Put another way, you can see the ORM as the layer that connects object oriented programming (OOP) to relational databases.
-                                -> To perform various data creating, reading, updating and deleting (CRUD) operations in relational databases without using SQL.
+                                -> Use ORMs and prepared statements to avoid SQL injections
+A prepared statement            - Sent once to the database as a template with no values. It gets compiled and optimized by the database.
+                                - parameters are bound to that template with a different protocol. The statement can then be executed multiple times with high efficiency.
+                                -> SQL injections cannot occur when using prepared statements
+                                -* Django has its own ways of protecting from SQL injection (as noted in the docs https://docs.djangoproject.com/en/3.0/topics/security/#sql-injection-protection).
 
 Advantages of the ORM     - Hides and encapsulates changes in the data source 
                           - Developers don't have to write any additional low-level code
