@@ -83,7 +83,8 @@ List of common algorithms:
   - IP Hash: 
     - Desc: The IP address of the client is used to determine which server receives the request. This ensures that requests from the same client are always directed to the same server, which can be useful for maintaining session state or caching.
     - Example:
-      - If a client with IP address 192.168.1.100 sends a request, based on its IP address hash, it always gets directed to Server A. Similarly, if another client with IP address 192.168.1.200 sends a request, it will always be directed to Server B.
+      - If a client with IP address 192.168.1.100 sends a request, **based on its IP address hash**, it always gets directed to Server A. 
+      - Similarly, if another client with IP address 192.168.1.200 sends a request, it will always be directed to Server B.
 
   - Weighted Round Robin: 
     - Decs: Similar to Round Robin, but each server is assigned a weight indicating its processing capacity. Servers with higher weights receive a larger proportion of requests.
