@@ -7,6 +7,7 @@ Description:
   - When the PREPARE statement is executed, the specified statement is parsed, analyzed, and rewritten. When an EXECUTE command is subsequently issued, the prepared statement is planned and executed
   - Prepared statements only last for the duration of the current database session. When the session ends, the prepared statement is forgotten, so it must be recreated before being used again.
   - Prepared statements can be manually cleaned up using the DEALLOCATE command.
+
 Exmaples:
   ```
     PREPARE fooplan (int, text, bool, numeric) AS
